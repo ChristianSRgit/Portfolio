@@ -1,13 +1,42 @@
 html,body{
     height: 100%;
     width: 100%;
-    background-color: aquamarine;
+    background-color: #000;
     margin: 0;
     padding: 0;
-    font-family: 'Libre Franklin', sans-serif;
-    font-family: 'Odibee Sans';
-    font-family: 'Poppins', sans-serif;
+    font-family:'Libre Franklin','Odibee Sans','Poppins', sans-serif;
     
+    
+}
+.background{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    fill: #fff;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.blops{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+}
+.blops .blop1{
+    top:10%;
+    left: 0%;
+}
+.blops .blop2{
+    top: 20%;
+    right: 0%;
+}
+.blops .blop3{
+    bottom: 10%;
+    left: 10%;
+}
+.blops .blop4{
+    bottom: 0%;
+    right: 0%;
 }
 header{
     width: 100%;
@@ -20,23 +49,99 @@ header{
 
 }
 h1{
-    font-size:4rem;
+    font-family:'Poppins';
+    font-style:normal;
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+    font-size:4rem;
     color: #fff;
+    padding-top: 5%;
+    margin: 0px;
 }
 
 h2{
-    font-family: 'Libre Franklin', sans-serif;
+    font-family:'Odibee Sans';
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    padding: 1%;
+    margin-bottom: 0px;
+    
+}
+.contactMe{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 10%;
+    background-color: #000;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    margin: 0px;
+}
+a,svg{
     color: #fff;
 }
-ul,li{
+.trabajos{
+    background-color: #000;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 0;
+}
+
+
+h2 p{
+    display: inline;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #fff;
+    margin: 3%;
+    font-size: 2rem;
+    border-bottom: 1px solid #fff;
+}
+ul{
     display: grid;
     grid-template-columns: repeat(4,2fr);
+    height: 20em;
     list-style-type: none;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 0px;
-   
+    
+}
+.DDDcard{
+    height: 100%;
+}
+
+div ul li{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    height:100%;
+    width:100%;
+}
+.contactMe section{
+    background-color:#000;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+section{
+    width: 100%;
+    height:max-content;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.900);
+    color: gray;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }
