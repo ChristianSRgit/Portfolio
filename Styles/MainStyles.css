@@ -17,24 +17,24 @@ html,body{
     left: 0;
     z-index: 1;
 }
-.blops{
+.background .blops{
     position: absolute;
     height: 50%;
     width: 50%;
 }
-.blops .blop1{
-    top:10%;
+.background .blop1{
+    top: 0%;
     left: 0%;
 }
-.blops .blop2{
-    top: 20%;
+.background .blop2{
+    top: 0%;
     right: 0%;
 }
-.blops .blop3{
-    bottom: 10%;
-    left: 10%;
+.background .blop3{
+    bottom: 0%;
+    left: 0%;
 }
-.blops .blop4{
+.background .blop4{
     bottom: 0%;
     right: 0%;
 }
