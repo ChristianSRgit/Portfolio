@@ -8,7 +8,9 @@ html,body{
 
 }
 
-header{
+header div{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
     margin-top: 0px;
@@ -18,24 +20,58 @@ header{
     
 }
 h1{
+    display: inline-block;
     font-family:'Poppins';
     font-style:normal;
-    font-weight: bold;
+    font-weight:400;
     font-size:6rem;
+    line-height: 80%;
+    text-align: left;
     color: #fff;
-    padding-top: 5%;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    margin: 0px;
+    animation: frontBorder 1S ease-out;
+}
+h3{
+    font-family:'Poppins';
+    font-style:normal;
+    font-weight:400;
+    font-size:2rem;
+    line-height: 80%;
+    text-align: left;
+    color: #fff;
+    padding-top: 3rem;
+    padding-left: 3rem;
     margin: 0px;
 }
+span{
+    z-index: 1;
+    animation: frontBorder 1S ease-out;
+}
+.headerGrid{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
 
-h2{
-    font-family:'Odibee Sans';
-    text-align: center;
-    justify-content: center;
-    color: #fff;
-    padding: 1%;
-    margin-bottom: 0px;
+div hr{
+    width: 60em;
+    padding-left: 10%;
     
 }
+.frontend{
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    line-height: 1%;
+    font-size:4.5rem;
+    padding-right: 2%;
+    padding-top:0;
+    margin: 0;
+    animation: frontBorder 1S ease-out;
+}
+
 .contactMe{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -53,20 +89,26 @@ a,svg{
 svg{
     height: 4em;
     width: 4em;
+    display: inline;
+    height: fit-content;
 }
 .trabajos{
     background-color: #000;
     color: #fff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
     border: 0;
 }
 
-h2 p{
-    display: inline;
-    font-family: 'Libre Franklin', sans-serif;
+h2 {
+    display: inline-block;
+    font-family:'Poppins';
+    font-style:normal;
+    font-weight:400;
     color: #fff;
     margin: 3%;
-    font-size: 3rem;
+    font-size: 4rem;
+    align-items: ;
 }
 .works{
     height: min-content;
@@ -100,26 +142,8 @@ img:hover{
     animation: showImg 0.5s ease 1 
 }
 
-.front{
-    border-bottom: 1px solid #fff;
-    animation: frontBorder 5S ease 1 both;
-}
-
-@keyframes showImg {
-    from{
-        filter:blur(3px);
-    }
-    to{
-        filter:blur(0px);
-    }
-}
-@keyframes frontBorder {
-0%{left: 0;top: 0px;}
-100%{left: 100;top: 100px;}
-    
-}
 article h4{
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: 1.2em;
 text-align: center;
 position: absolute;
@@ -127,14 +151,15 @@ top: 40%;
 margin-left: 7%;
 }
 
-.contactMe section{
+.contactMe{
     background-color:#000;
     color: #fff;
     text-align: center;
-    margin: 0;
+    padding-bottom: 1%;
+    margin: 0%;
 }
 
-.sectionAboutMe{
+.sectionAboutMe,h3{
     width: 100%;
     background-color: #000;
     color: #fff;
@@ -149,7 +174,46 @@ footer{
     color: gray;
     width: 100%;
     height: 4em;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    padding-top: 0.2%;
+    
+}
+footer p{
     align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+ button{
+    float: right;
+    display: flex;
+    border-radius: 1.5rem;
+    text-align: center;
+    padding-top: 0.5%;
+    padding-bottom: 1em;
+    margin-right: 0.5%;
+    
+    
+}
+@keyframes showImg {
+    from{
+        filter:blur(3px);
+    }
+    to{
+        filter:blur(0px);
+    }
+}
+
+@keyframes frontBorde {
+0%{
+    transform: translateY(50%);
+    opacity: 0%;
+    
+}
+50%{
+    
+}
+100%{
+    transform: translateY(0%);
+    opacity: 100%;
+}
 }
