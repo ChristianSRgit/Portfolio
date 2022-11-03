@@ -205,46 +205,9 @@ footer p {
     font-style:normal;
     font-weight:500;
     font-size: 2rem;
+    height: 8.75rem ;
    
 }
 
-button {
-    font-family:'Darker Grotesque';
-    font-style:normal;
-    font-weight:500;
-    width: 4.5rem;
-    float: right;
-    display: flex;
-    border-radius: 1.5rem;
-    text-align: center;
-    padding-top: 0.5%;
-    padding-bottom: 1em;
-    margin-right: 0.5%;
 
 
-}
-
-@keyframes showImg {
-    from {
-        filter: blur(3px);
-    }
-
-    to {
-        filter: blur(0px);
-    }
-}
-
-@keyframes frontBorde {
-    0% {
-        transform: translateY(50%);
-        opacity: 0%;
-
-    }
-
-    50% {}
-
-    100% {
-        transform: translateY(0%);
-        opacity: 100%;
-    }
-}
