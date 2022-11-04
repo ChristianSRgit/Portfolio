@@ -1,0 +1,76 @@
+body{
+    background-color: lightgray;
+    font-family:'Darker Grotesque';
+    font-weight:500;
+    font-size: 1.5rem;
+    
+}
+
+
+.mainGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown{
+    border: 2px solid #000;
+    width: 10rem;
+
+}
+
+.bannerDashboard{
+    display: grid;
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
+    border-bottom: 2px solid #000;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    
+}
+
+
+
+span:nth-child(1){ /*Dashboard*/
+}
+span:nth-child(2){ /*btn dropdown*/
+}
+nav{
+    padding-left: 0;
+    font-family: 'Bebas Neue';
+
+}
+
+ul{
+    padding-left: 1.5rem ;
+}
+
+li{
+    list-style-type: none;
+    display: flex;
+}
+
+li>div{
+    margin: auto;
+    background-color: #000;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 1rem;
+    border-radius: 9999px;
+    
+}
+.DLMode{
+    padding-left: 1.5rem;
+}
+
+input[type="checkbox"]{
+
+
+}
+
+
