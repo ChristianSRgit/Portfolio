@@ -24,12 +24,10 @@ body{
 }
 
 .bannerDashboard{
-    display: grid;
     font-family: 'Bebas Neue';
     font-size: 1.5rem;
     border-bottom: 2px solid #000;
     padding-left: 1rem;
-    padding-right: 1rem;
     padding-top: 0.2rem;
     
 }
@@ -37,8 +35,10 @@ body{
 
 
 span:nth-child(1){ /*Dashboard*/
+    
 }
 span:nth-child(2){ /*btn dropdown*/
+    margin-left: 2rem;
 }
 nav{
     padding-left: 0;
