@@ -29,25 +29,25 @@
 
                 <nav>
                     <ul>
-                        <li class="userHere">HOME<div></div></li>
-                        <li class="selectDot">PROJECTS</li>
-                        <li class="selectDot">ABOUT</li>
-                        <li class="selectDot">CONTACT</li>
+                        <li class="userHere">HOME<div></div></li> <!--div inside li it's the dot -->
+                        <li class="selectNext"><a href="/index.html">PROJECTS</a> </li>
+                        <li class="selectNext"><a href="/index.html">ABOUT</a></li>
+                        <li class="selectNext"><a href="/index.html">CONTACT</a></li>
                     </ul>
                     
                 </nav>
 
-                <div class="DLMode">
+                <div id="darkMode" class="DLMode">
                     <div class="DLModeBox">
-                        <input type="radio" value="Dark" name="StyleMode">
-                        <label for="">Dark</label>
-                        <span class="tooltipText">DARK MODE</span>
+                        <input id="DStyleMode" type="radio" value="Dark" name="StyleMode">
+                        <label for="DStyleMode">Dark</label>
+                        <span id="DarkMTooltip" class="tooltipText">DARK MODE</span>
                     </div>
 
-                    <div class="DLModeBox">
-                        <input type="radio" value="Light" name="StyleMode">
-                        <label for="">Light</label>
-                        <span class="tooltipText">LIGHT MODE</span>
+                    <div id="lightMode" class="DLModeBox">
+                        <input id="LStyleMode" type="radio" value="Light" name="StyleMode">
+                        <label for="LStyleMode">Light</label>
+                        <span id="LigthMTooltip" class="tooltipText">LIGHT MODE</span>
                     </div>
 
                 </div>
