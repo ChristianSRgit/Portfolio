@@ -130,10 +130,11 @@ li>div {
     align-items: center;
 }
 
+
 .tooltipText{
     position: absolute;
+    visibility: hidden;
     font-weight: 600;
-    display: inline-block;
     font-size: 1.5rem;
     background-color:#d9f24f;
     color: #1f1f1f;
@@ -142,6 +143,19 @@ li>div {
     margin-left:5rem ;
     transform:rotate(20deg);
 }
+
+.dark:hover  .tooltipText{
+    visibility: visible;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+}
+
+.light:hover  .tooltipText{
+    visibility: visible;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+}
+
 
 
 input{

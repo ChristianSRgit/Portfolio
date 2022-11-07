@@ -1,8 +1,8 @@
-let DLModeBox = document.querySelector("#DLModeBox");
+let tooltipDark = document.getElementById('#darkMTooltip');
 
-DLModeBox.addEventListener('click',console);
-
-function console(){
-    console.log('xd')
+window.onmousemove = function(e) {
+    let x = e.clientX;
+    let y = e.clientY;
+    tooltipDark.style.top = (y - 10) + 'px';
+    tooltipDark.style.left = (x + 10) + 'px';
 }
-
