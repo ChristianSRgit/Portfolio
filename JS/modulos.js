@@ -1,8 +1,15 @@
-let tooltipDark = document.getElementById('#darkMTooltip');
 
-window.onmousemove = function(e) {
-    let x = e.clientX;
-    let y = e.clientY;
-    tooltipDark.style.top = (y - 10) + 'px';
-    tooltipDark.style.left = (x + 10) + 'px';
+
+let bannerDashboard = document.getElementById('bannerDashboard');
+let navDir = document.getElementById('navDir');
+let DLMode = document.getElementById('DLMode')
+
+bannerDashboard.addEventListener('click',showDropdown)
+
+
+function showDropdown(){
+    navDir.classList.toggle("hide");
+    DLMode.classList.toggle("hide");
+    bannerDashboard.classList.toggle('fixBorder');
+
 }

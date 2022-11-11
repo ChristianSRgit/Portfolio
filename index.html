@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CR Portfolio</title>
-  <linK rel="icon" type="image/icon" href="/Media/suitcase.png">
-  </linK>
+  <linK rel="icon" type="image/icon" href="/Media/suitcase.png"></linK>
   <link rel="stylesheet" href="/Styles/MainStyles.css">
   <link rel="stylesheet" href="/Styles/MediaQueries.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,59 +16,64 @@
 </head>
 
 <body>
+  <div class="mainGrid">
 
-  <header class="headerGrid">
-    <div class="christianH1">
-      <h1>
-        Christian
-      </h1>
-    </div>
-    <div class="ramundoH1">
-      <h1>
-        Ramundo
-      </h1>
-    </div>
 
-    <div id="mainDropdown" class="dropdown">
-      <div>
-        <span>Dashboard</span>
-        <span>-</span>
+    <header class="headerGrid">
+      <div class="christianH1">
+
+        <h1>
+          Christian
+        </h1>
+        <h1>
+          Ramundo
+        </h1>
       </div>
+  
+      <!--  dropdown -->
+      <div id="mainDropdown" class="dropdown dropdownDark">
 
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-
-      <div id="DLMode">
-        <div>
-          <label for="">Light
-            <input type="radio">
-          </label>
+        <div id="bannerDashboard" class="bannerDashboard fixBorder darkThemeBanner ">
+          <span>Dashboard</span>
+          <span>-</span>
         </div>
-        <div>
-          <label for="">Dark
-            <input type="radio">
-          </label>
+
+        <nav id="navDir" class="hide">
+
+          <ul>
+            <li class="userHereLight">HOME<div class="darkDot"></div>
+            </li>
+            <!--div inside li it's the dot -->
+            <li class="selectNext"><a href="/index.html">PROJECTS</a> </li>
+            <li class="selectNext"><a href="/index.html">ABOUT</a></li>
+            <li class="selectNext"><a href="/index.html">CONTACT</a></li>
+          </ul>
+
+        </nav>
+
+        <div id="DLMode" class="DLMode hide">
+
+          <div class="DLModeBox dark">
+            <input id="DStyleMode" class="darkThemeInput" type="radio" value="Dark" name="StyleMode">
+            <label for="DStyleMode">Dark</label>
+            <span id="darkMTooltip" class="tooltipText darkTooltip">DARK MODE</span>
+          </div>
+
+          <div id="lightMode" class="DLModeBox light">
+            <input id="LStyleMode" class="darkThemeInput" type="radio" value="Light" name="StyleMode">
+            <label for="LStyleMode">Light</label>
+            <span id="darkMTooltip" class="tooltipText darkTooltip">LIGHT MODE</span>
+          </div>
+
         </div>
-      </div>
 
-    </div>
-
-    <div class="frontend">
-      <h1>
-        Frontend
-      </h1>
-    </div>
-    <div class="developer">
-      <h1>
-        Developer
-      </h1>
-    </div>
+      </div> <!-- Aca termina el dropdown -->
+  </div>
+  <div class="frontendDeveloper">
+    <span>
+      * Frontend Developer *
+    </span>
+  </div>
   </header>
 
 
@@ -98,7 +102,7 @@
   </div> -->
 
 
- 
+
   <!-- <section class="sectionAboutMe">
     <h3>About Me</h3>
     <p>
@@ -123,5 +127,6 @@
     </div>
   </footer>
 </body>
+<script src="/JS/modulos.js"></script>
 
 </html>
