@@ -20,16 +20,17 @@
 
         <div id="2" class="column">
 
-            <div id="mainDropdown" class="dropdown">
+            <!-- aca empieza el dropdown -->
+            <div id="mainDropdown" class="dropdown dropdownDark">
 
-                <div class="bannerDashboard">
+                <div class="bannerDashboard darkThemeBanner">
                     <span>Dashboard</span>
                     <span>-</span>
                 </div>
 
                 <nav>
                     <ul>
-                        <li class="userHere">HOME<div></div></li> <!--div inside li it's the dot -->
+                        <li class="userHereLight">HOME<div class="darkDot"></div></li> <!--div inside li it's the dot -->
                         <li class="selectNext"><a href="/index.html">PROJECTS</a> </li>
                         <li class="selectNext"><a href="/index.html">ABOUT</a></li>
                         <li class="selectNext"><a href="/index.html">CONTACT</a></li>
@@ -39,15 +40,15 @@
 
                 <div id="darkMode" class="DLMode">
                     <div class="DLModeBox dark">
-                        <input id="DStyleMode" type="radio" value="Dark" name="StyleMode">
+                        <input id="DStyleMode" class="darkThemeInput" type="radio" value="Dark" name="StyleMode">
                         <label for="DStyleMode">Dark</label>
-                        <span id="darkMTooltip" class="tooltipText Dtooltip">DARK MODE</span>
+                        <span id="darkMTooltip" class="tooltipText darkTooltip">DARK MODE</span>
                     </div>
 
                     <div id="lightMode" class="DLModeBox light">
-                        <input id="LStyleMode" type="radio" value="Light" name="StyleMode">
+                        <input id="LStyleMode" class="darkThemeInput" type="radio" value="Light" name="StyleMode">
                         <label for="LStyleMode">Light</label>
-                        <span id="ligthMTooltip" class="tooltipText Ltootip">LIGHT MODE</span>
+                        <span id="darkMTooltip" class="tooltipText darkTooltip">LIGHT MODE</span>
                     </div>
 
                 </div>
