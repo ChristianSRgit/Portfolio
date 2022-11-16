@@ -1,20 +1,25 @@
 /* Paleta de colores
 #d9f24f lemon
-rgb(79, 38, 233) lighviolet
+#4f26e9 lighviolet
 #f2e8de white text
-#1f1f1f background
+#1f1f1f dark text
 */
-
+:root{
+    --themeColorWhite: #f2e8de;
+    --themeColorBlack: #1f1f1f;
+    --detailColorVi: #4f26e9;
+    --detailColorLe: #d9f24f;
+}
 html,
 body {
     height: 100%;
     width: 100%;
-    background-color: #1f1f1f;
+    background-color: var(--themeColorWhite);
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: #1f1f1f;
+    background-color: var(--themeColorWhite);
     font-family: 'Darker Grotesque';
     font-weight: 500;
     font-size: 1.5rem;
@@ -24,7 +29,6 @@ header {
     display: flex;
     height: auto;
     padding-top: 0px;
-
 }
 
 h1 {
@@ -34,9 +38,8 @@ h1 {
     font-weight: 400;
     font-size: 6rem;
     line-height: 80%;
-    color: #fff;
+    color:  var(--themeColorBlack);
     margin: 1rem;
-    animation: frontBorder 1S ease-out;
 }
 
 h2 {
@@ -44,7 +47,7 @@ h2 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    color: #fff;
+    color: var(--themeColorBlack);
     font-size: 4rem;
 }
 
@@ -55,7 +58,7 @@ h3 {
     font-size: 2rem;
     line-height: 80%;
     text-align: left;
-    color: #fff;
+    color: var(--themeColorBlack);
     padding-top: 3rem;
     padding-left: 3rem;
     margin: 0px;
@@ -85,9 +88,18 @@ h3 {
     height: 8rem;
     width: 100%;
     top: 18rem;
-    background-color: #d6f334;
-
 }
+
+.darkThemeMoving{
+    background-color: var(--detailColorLe);
+}
+
+.lightThemeMoving{
+    background-color: var(--detailColorVi);
+}
+
+
+
 .frontendDeveloper span{
     display: inline-block;
     font-family: 'Bebas Neue';
@@ -95,43 +107,52 @@ h3 {
     font-weight: 400;
     font-size: 6rem;
     line-height: 80%;
-    color: #1f1f1f;
 }
+
+.frontDevDarkThemeMoving{
+    color: var(--themeColorWhite);
+}
+
+.frontDevLightThemeMoving{
+    color: var(--themeColorBlack);
+}
+
+
 
 /*Desde aca es el dropdown*/
 .dropdown {
     position: fixed;
     top: 1rem;
     right: 4rem;
-    border: 2px solid #f2e8de;
     width: 12rem;
     margin: 0px;
 }
 
 .dropdownDark{
-    color: #f2e8de;
-    border: 2px solid #f2e8de;
+    color: var(--themeColorWhite);
+    border: 2px solid var(--themeColorWhite);
 }
 .dropdownLight{
-    color: #1f1f1f;
-    border: 2px solid #1f1f1f;
+    color: var(--themeColorBlack);
+    border: 2px solid var(--themeColorBlack);
+
 
 }
 
 .dropdown:hover{
-    border-color: #4f26e9;
+    border-color: var(--detailColorVi);
 }
 
 .dropdownDark:hover .bannerDashboard{
-    color: #f2e8de;
+    color: var(--themeColorWhite);
     letter-spacing: 1px;
-    background-color: #4f26e9;
+    background-color: var(--detailColorVi);
 }
 
 .dropdownLight:hover .bannerDashboard{
-    color: #f2e8de;
+    color: var(--themeColorWhite);
     letter-spacing: 1px;
-    background-color: #4f26e9;
+    background-color: var(--detailColorVi);
 }
 
 .bannerDashboard {
@@ -157,23 +178,23 @@ h3 {
 .fixBorder{
 }
 .darkThemeBanner {
-    color: #1f1f1f;
-    background-color: #f2e8de;
+    color: var(--themeColorBlack);
+    background-color: var(--themeColorWhite);
     
 }
 .lightThemeBanner {
-    color: #f2e8de;
-    background-color: #1f1f1f;
+    color: var(--themeColorWhite);
+    background-color: var(--themeColorBlack);
     
 }
 
 .bannerDashboard:hover{
-    color: #f2e8de;
-    background-color: #4f26e9;
+    color: var(--themeColorWhite);
+    background-color: var(--detailColorVi);
 }
 
 .bannerDashboard:hover .dropdown{
-    border-color: #4f26e9;
+    border-color: var(--detailColorVi);
 }
 
 /*Dashboard -- elements*/
@@ -208,17 +229,17 @@ li {
 }
 
 .userHereLight {
-    color: #d9f24f;
+    color: var(--detailColorLe);
 }
 
 .userHereDark{
-    color: #4f26e9;
+    color: var(--detailColorVi);
 }
 
 /*dots*/
 .lightDot {
     margin: auto;
-    background-color: #4f26e9;
+    background-color: var(--detailColorVi);
     width: 0.4em;
     height: 0.4em;
     margin-right: 1rem;
@@ -228,7 +249,7 @@ li {
 
 .darkDot{
     margin: auto;
-    background-color: #d9f24f;
+    background-color: var(--detailColorLe);
     width: 0.4em;
     height: 0.4em;
     margin-right: 1rem;
@@ -272,13 +293,13 @@ a:visited {
 }
 
 .darkTooltip{
-    color: #1f1f1f;
-    background-color:#d9f24f;
+    color: var(--themeColorBlack);
+    background-color:var(--detailColorLe);
 }
 
 .lightTooltip{
-    color: #f2e8de;
-    background-color: #4f26e9;
+    color: var(--themeColorWhite);
+    background-color: var(--detailColorVi);
 }
 
 
@@ -302,13 +323,13 @@ input{
    border-radius: 50%;
 }
 .darkThemeInput{
-    border: 6px solid #1f1f1f;
-    box-shadow: 0 0 0 1px #f1f1f1;
+    border: 6px solid var(--themeColorBlack);
+    box-shadow: 0 0 0 1px var(--themeColorWhite);
 }
 
 .lightThemeInput{
-   border: 6px solid #f1f1f1;
-   box-shadow: 0 0 0 1px #1f1f1f;
+   border: 6px solid var(--themeColorWhite);
+   box-shadow: 0 0 0 1px var(--themeColorBlack);
 }
 
 
@@ -321,12 +342,12 @@ input[type="radio"] {
 }
 
 .lightThemeInput[type="radio"]:checked {
-    background: #4f26e9;
+    background: var(--detailColorVi);
 
 }
 
 .darkThemeInput[type="radio"]:checked {
-    background: #d9f24f;
+    background: var(--detailColorLe);
 
 }
 
@@ -342,13 +363,19 @@ label {
 /*aca termina el dropdown*/
 
 footer {
-    background-color: #1f1f1f;
+    
     color: gray;
     width: 100%;
     height: 4em;
     text-align: center;
-    border-top: solid 1px #f2e8de;
     padding-top: 0.2%;
+}
+
+.darkFooter{
+    border-top: solid 1px var(--themeColorWhite);
+}
+.lightFooter{
+    border-top: solid 1px var(--themeColorBlack);
 
 }
 
