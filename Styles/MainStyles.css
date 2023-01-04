@@ -4,6 +4,12 @@
 #f2e8de white text
 #1f1f1f dark text
 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root{
     --themeColorWhite: #f2e8de;
     --themeColorBlack: #1f1f1f;
@@ -12,6 +18,8 @@
 }
 html,
 body {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     background-color: var(--themeColorWhite);
@@ -81,15 +89,17 @@ h3 {
     padding-top: 2rem;
 }
 
-.frontendDeveloper {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    height: 8rem;
-    width: 100%;
-    top: 18rem;
+.frontendH1{
+    grid-column: 3/3;
+    grid-row: 1/1;
+    padding-top: 2rem;
 }
 
+
+li>img{
+    max-height: 5rem;
+    
+}
 .darkThemeMoving{
     background-color: var(--detailColorLe);
 }
@@ -98,34 +108,60 @@ h3 {
     background-color: var(--detailColorVi);
 }
 
+.frontendDeveloper { /*containter*/
+    height: 10vh;
+    width: 100%;
+    background-color: var(--detailColorVi);
+    overflow: hidden;
+
+}
 
 
-.frontendDeveloper span{
-    display: inline-block;
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 6rem;
-    line-height: 80%;
+.frontendDeveloper li{
+    display: flex;
+    width: 25vh;
+    height: 100%;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    font-family: 'Darker Grotesque';
+    font-weight: 500;
+    font-size: 5rem;
+    background-color: var(--detailColorVi);
+
 }
 
 .frontDevDarkThemeMoving{
     color: var(--themeColorWhite);
 }
 
-.frontDevLightThemeMoving{
+.frontDevLightThemeMoving{ /*content*/
     color: var(--themeColorBlack);
+    height: 100%;
+    list-style: none;
+    display: flex;
+}
+
+.movingRight{
+    animation: scrollingR 17s linear infinite;
+}
+.movingLeft{
+    animation: scrollingL 17s linear infinite;
 }
 
 
 
 /*Desde aca es el dropdown*/
 .dropdown {
+    font-size: 3rem;
     position: fixed;
     top: 1rem;
-    right: 4rem;
-    width: 12rem;
+    right: 10rem;
+    width: 15rem;
+    height: auto;
     margin: 0px;
+    z-index: 1;
 }
 
 .dropdownDark{
@@ -156,15 +192,18 @@ h3 {
 }
 
 .bannerDashboard {
+    display: flex;
+    flex-direction: column;
     font-family: 'Bebas Neue';
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     letter-spacing: 1px;
-    height: 1.5rem;
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
-    padding-right: 0px;
-    padding-left: 1rem;
+    height: 4rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
     cursor: pointer;
     margin-top: 0px;
     margin-bottom: 0PX;
@@ -173,6 +212,9 @@ h3 {
     border-bottom: 0px;
 
 
+}
+
+.bannerDashboard>span{
 }
 
 .fixBorder{
@@ -281,14 +323,16 @@ a:visited {
 
 
 .tooltipText{
+    display: flex;
+    height: 4rem;
+    width: 10rem;
     position: absolute;
     visibility: hidden;
-    display: flex;
-    width: 8rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-weight: 600;
     font-size: 1.5rem;
-    padding-right: 0.2rem;
-    padding-left: 0.2rem;
     transform:rotate(20deg);
 }
 
@@ -305,13 +349,13 @@ a:visited {
 
 .dark:hover  .tooltipText{
     visibility: visible;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     margin-left: 4rem;
 }
 
 .light:hover  .tooltipText{
     visibility: visible;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     margin-left: 4rem;
 }
 
@@ -392,3 +436,13 @@ footer p {
 
 
 
+/*ANIMATIONS*/
+@keyframes scrollingL {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-190vh);}   
+}
+
+@keyframes scrollingR {
+    0%{transform: translateX(-190vh);}
+    100%{transform: translateX(0vh);}   
+}

@@ -5,11 +5,74 @@ rgb(79, 38, 233) lighviolet
 #1f1f1f background
 */
 
+:root{
+    --themeColorWhite: #f2e8de;
+    --themeColorBlack: #1f1f1f;
+    --detailColorVi: #4f26e9;
+    --detailColorLe: #d9f24f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     /* background-color: #1f1f1f; */
-    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
+
+.column{
+    padding-top: 10rem;
+}
+.maingrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.frontendDeveloper{ /*containter*/
+    height: 10vh;
+    width: 80vh;
+    font-size: 2rem;
+
+   /*  overflow: hidden; */
+}
+.frontendDeveloper li{
+    display: flex;
+    width: 20vh;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.lightThemeMoving{ /*colors*/
+    background-color: var(--detailColorVi);
+    color: var(--themeColorWhite);
+
+}
+
+.frontDevLightThemeMoving{ /*content*/
+    height: 100%;
+    list-style: none;
+    display: flex;
+    animation: scrolling 20s linear infinite;
+}
+
+@keyframes scrolling {
+    0%{transform: translateX(80vh);}
+    100%{transform: translateX(-180vh);}
+
+    
+}
+
+
 
 
 
