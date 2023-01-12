@@ -97,7 +97,8 @@ h3 {
 
 
 li>img{
-    max-height: 5rem;
+    max-height: 2.2rem;
+
     
 }
 .darkThemeMoving{
@@ -154,11 +155,11 @@ li>img{
 
 /*Desde aca es el dropdown*/
 .dropdown {
-    font-size: 3rem;
+    font-size: 2rem;
     position: fixed;
     top: 1rem;
     right: 10rem;
-    width: 15rem;
+    width: 10rem;
     height: auto;
     margin: 0px;
     z-index: 1;
