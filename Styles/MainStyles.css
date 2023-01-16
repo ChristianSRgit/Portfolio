@@ -336,16 +336,24 @@ a:visited {
     color: #1f1f1f;
     background-color: #4f26e9;
     border-radius: 10%;
-    padding-right: 1em;
-    padding-left: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     
 
 }
 
 .blender3D>li>span{
+    height: 10em;
     background-color: red;
+    border-radius: 0%;
+   
+}
+.blender3D>li>span:nth-child(0){
+    
+    background-image: url("/Media/icecreamsadwich-min.png");
+    background-position: 10em;
 }
 
 
