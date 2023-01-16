@@ -15,14 +15,149 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darker+Grotesque:wght@300;400;500&display=swap"
     rel="stylesheet">
 </head>
-<body>
-    <h1>jeje</h1>
-    <div class="personalProyectsGrid">
-      <!-- Carteles verticales a proyectos links y blender render abre zoom a los diferentes renders y pequeña descripcion de exp con blender -->
-      <div>WebProyect1</div>
-      <div>WebProyect2</div>
-      <div>BlenderRenders</div>
-  
+
+<body id="body">
+  <header>
+    <div class="mainGrid">
+
+
+      <header class="headerGrid">
+        <div class="christianH1">
+
+          <h1>
+            Christian
+            <br>
+          </h1>
+          <h1>
+            Ramundo
+          </h1>
+        </div>
+        <div class="frontendH1">
+
+          <h1>
+            Frontend
+          </h1>
+          <h1>
+            Developer
+          </h1>
+        </div>
+
+        <!--  dropdown -->
+        <div id="mainDropdown" class="dropdown dropdownLight">
+
+          <div id="bannerDashboard" class="bannerDashboard fixBorder lightThemeBanner ">
+            <span>Dashboard</span>
+            <span></span>
+          </div>
+
+          <nav id="navDir" class="hide">
+
+            <ul>
+              <li class="selectNext"><a href="/index.html">HOME</a></li>
+              <!--div inside li it's the dot -->
+              <li class=" userHereDark">PROJECTS<div class="lightDot"></div>
+              </li>
+              <li class="selectNext"><a href="/index.html">ABOUT</a></li>
+              <li class="selectNext"><a href="/index.html">CONTACT</a></li>
+            </ul>
+
+          </nav>
+
+          <div id="DLMode" class="DLMode hide">
+
+            <div class="DLModeBox light">
+              <input id="DStyleMode" class="lightThemeInput" type="radio" value="Dark" name="StyleMode">
+              <label for="DStyleMode">Dark</label>
+              <span id="darkMTooltip" class="tooltipText lightTooltip">DARK MODE</span>
+            </div>
+
+            <div id="lightMode" class="DLModeBox dark">
+              <input id="LStyleMode" class="lightThemeInput" type="radio" value="Light" name="StyleMode">
+              <label for="LStyleMode">Light</label>
+              <span id="lightMTooltip" class="tooltipText lightTooltip">LIGHT MODE</span>
+            </div>
+
+          </div>
+
+        </div> <!-- Aca termina el dropdown -->
     </div>
+
+  </header>
+
+  <div class="frontendDeveloper lightThemeMoving">
+    <!-- banner-->
+    <ul class="frontDevLightThemeMoving movingRight">
+      <!-- class moving l/r -->
+      <li><img src="/Media/nodejs-icon.svg" alt=""></li>
+      <li><img src="/Media/javascript-2.svg" alt="">
+      <li><img src="/Media/express-109.svg" alt=""></li>
+      <li><img src="/Media/mysql-6.svg" alt=""></li>
+      <li><img src="/Media/bootstrap-5-1.svg" alt=""></li>
+      <li><img src="/Media/git.svg" alt=""></li>
+      <li><img src="/Media/css-3.svg" alt=""></li>
+      <li><img src="/Media/adobe-photoshop-2.svg" alt=""></li>
+      <li><img src="/Media/nodejs-icon.svg" alt=""></li>
+      <li><img src="/Media/javascript-2.svg" alt="">
+      <li><img src="/Media/express-109.svg" alt=""></li>
+      <li><img src="/Media/mysql-6.svg" alt=""></li>
+      <li><img src="/Media/bootstrap-5-1.svg" alt=""></li>
+      <li><img src="/Media/git.svg" alt=""></li>
+      <li><img src="/Media/css-3.svg" alt=""></li>
+      <li><img src="/Media/adobe-photoshop-2.svg" alt=""></li>
+      <li><img src="/Media/nodejs-icon.svg" alt=""></li>
+      <li><img src="/Media/javascript-2.svg" alt="">
+      <li><img src="/Media/express-109.svg" alt=""></li>
+      <li><img src="/Media/mysql-6.svg" alt=""></li>
+      <li><img src="/Media/bootstrap-5-1.svg" alt=""></li>
+      <li><img src="/Media/git.svg" alt=""></li>
+      <li><img src="/Media/css-3.svg" alt=""></li>
+      <li><img src="/Media/adobe-photoshop-2.svg" alt=""></li>
+      <li><img src="/Media/nodejs-icon.svg" alt=""></li>
+      <li><img src="/Media/javascript-2.svg" alt="">
+      <li><img src="/Media/express-109.svg" alt=""></li>
+      <li><img src="/Media/mysql-6.svg" alt=""></li>
+      <li><img src="/Media/bootstrap-5-1.svg" alt=""></li>
+      <li><img src="/Media/git.svg" alt=""></li>
+      <li><img src="/Media/css-3.svg" alt=""></li>
+      <li><img src="/Media/adobe-photoshop-2.svg" alt=""></li>
+    </ul>
+  </div>
+
+
+
+
+  <div class="projects">
+
+    <div>
+
+      <h2>Web Projects</h2>
+
+      <ul>
+        <li><span>Timbtower</span></li>
+        <li><span>Hokusaia</span></li>
+        <li><span>Ig's post</span></li>
+        <li><span>Final test</span></li>
+      </ul>
+
+      <h2>3D PROJECTS</h2>
+      
+      <ul class="blender3D">
+        <li><span>Timbtower</span></li>
+        <li><span>Hokusaia</span></li>
+        <li><span>Ig's post</span></li>
+        <li><span>Final test</span></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <footer class="footer lightFooter">
+    <div>
+      <p><a href="/contact.html">Let's collaborate</a></p>
+    </div>
+  </footer>
 </body>
+<script src="/JS/modulos.js"></script>
+
 </html>

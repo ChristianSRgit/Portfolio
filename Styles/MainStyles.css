@@ -51,8 +51,7 @@ h1 {
 }
 
 h2 {
-    display: inline-block;
-    font-family: 'Poppins';
+    font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
     color: var(--themeColorBlack);
@@ -97,7 +96,7 @@ h3 {
 
 
 li>img{
-    max-height: 2.2rem;
+    max-height: 3rem; /* 4 rem 1920 x 1080 y 3 rem notebook*/
 
     
 }
@@ -155,11 +154,11 @@ li>img{
 
 /*Desde aca es el dropdown*/
 .dropdown {
-    font-size: 2rem;
+    font-size: 3rem;
     position: fixed;
     top: 1rem;
     right: 10rem;
-    width: 10rem;
+    width: 15rem;
     height: auto;
     margin: 0px;
     z-index: 1;
@@ -309,6 +308,52 @@ a:visited {
 
 }
 
+.projects{
+    height: 10rem;
+    width: 100%;
+    font-size: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+.projects div{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+}
+.projects ul{
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 4rem;
+}
+
+.projects span{
+    color: #1f1f1f;
+    background-color: #4f26e9;
+    border-radius: 10%;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+
+}
+
+.blender3D>li>span{
+    background-color: red;
+}
+
+
+
+
+
+
+
 
 /*Dark/Light Mode*/
 
@@ -368,16 +413,14 @@ input{
    border-radius: 50%;
 }
 .darkThemeInput{
-    border: 6px solid var(--themeColorBlack);
-    box-shadow: 0 0 0 1px var(--themeColorWhite);
+    border: 4px solid var(--themeColorBlack);
+    box-shadow: 0 0 0 2px var(--themeColorWhite);
 }
 
 .lightThemeInput{
-   border: 6px solid var(--themeColorWhite);
-   box-shadow: 0 0 0 1px var(--themeColorBlack);
+   border: 4px solid var(--themeColorWhite);
+   box-shadow: 0 0 0 2px var(--themeColorBlack);
 }
-
-
 
 input[type="radio"] {
     width: 1.5em;
@@ -413,9 +456,15 @@ footer {
     width: 100%;
     height: 4em;
     text-align: center;
-    padding-top: 0.2%;
+    margin-top: auto;
 }
 
+footer p {
+    font-family:'Darker Grotesque';
+    font-style:normal;
+    font-weight:500;
+    font-size: 2rem;
+}
 .darkFooter{
     border-top: solid 1px var(--themeColorWhite);
 }
@@ -424,14 +473,6 @@ footer {
 
 }
 
-footer p {
-    font-family:'Darker Grotesque';
-    font-style:normal;
-    font-weight:500;
-    font-size: 2rem;
-    height: 8.75rem ;
-   
-}
 
 
 
