@@ -109,7 +109,7 @@ li>img{
 }
 
 .frontendDeveloper { /*containter*/
-    height: 10vh;
+    min-height: 10vh;
     width: 100%;
     background-color: var(--detailColorVi);
     overflow: hidden;
@@ -309,11 +309,9 @@ a:visited {
 }
 
 .projects{
-    height: 10rem;
+    height: auto;
     width: 100%;
     font-size: 4rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 
 }
 .projects div{
