@@ -19,7 +19,7 @@ rgb(79, 38, 233) lighviolet
 }
 
 body {
-    /* background-color: #1f1f1f; */
+    background-color: rgb(20, 20, 20);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -63,6 +63,22 @@ body {
     list-style: none;
     display: flex;
     animation: scrolling 20s linear infinite;
+}
+
+
+
+
+.tile{
+    outline:  1px solid white;
+}
+
+.tiles{
+    height: 100vh;
+    width: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    
 }
 
 @keyframes scrolling {
