@@ -96,7 +96,7 @@ h3 {
 
 
 li>img{
-    max-height: 3rem; /* 4 rem 1920 x 1080 y 3 rem notebook*/
+    max-height: 3rem; /* 4 rem 1920 x 1080 y 2.5 rem notebook*/
 
     
 }
@@ -339,7 +339,7 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background: var(--detailColorVi);
     height: 25rem;
     width: 15rem;
 
@@ -499,6 +499,7 @@ footer p {
     font-style:normal;
     font-weight:500;
     font-size: 2rem;
+    padding-bottom: 2rem;
 }
 .darkFooter{
     border-top: solid 1px var(--themeColorWhite);
