@@ -60,9 +60,8 @@ h2 {
 
 h3 {
     font-family: 'Bebas Neue';
-
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 3rem;
     line-height: 80%;
     text-align: left;
@@ -158,7 +157,7 @@ li>img{
     font-size: 3rem;
     position: fixed;
     top: 1rem;
-    right: 6rem;
+    right: 10rem;
     width: 15rem;
     height: auto;
     margin: 0px;
@@ -315,35 +314,41 @@ a:visited {
     font-size: 4rem;
 
 }
+
 .projects div{
     text-align: center;
     padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
 }
 .projects ul{
-    height: 100%;
-    width: auto;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-around;
-   
 }
 
 .projects span{
     color: #1f1f1f;
-    background-color: #4f26e9;
     border-radius: 10%;
     padding-top: 2em;
     padding-bottom: 2em;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    
+}
+
+.webProjects a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 25rem;
+    width: 15rem;
 
 }
 
+
 .blender3D>li>span{
-    height: 8em;
-    width: 4em;
+    height: 30rem;
+    width: 15rem;
     border-radius: 0%;
    
 }
@@ -487,7 +492,6 @@ footer {
     text-align: center;
     margin-top: auto;
     padding-top: 1em;
-    padding-bottom: 1em;
 }
 
 footer p {
@@ -505,27 +509,6 @@ footer p {
 }
 
 
-
-.tile{
-    outline:  1px solid white;
-}
-
-.tiles{
-    height: 100vh;
-    width: 100vh;
-    display: grid;
-    
-}
-
-
-::-webkit-scrollbar{
-    background-color: #f2e8de;
-    width: 0.5rem;
-}
-
-::-webkit-scrollbar-thumb{
-    background-color: #1f1f1f;
-}
 
 
 
