@@ -1,5 +1,5 @@
 ☐ animaciones carteles trabajos
-☐ fondo interaccion con hover
+☐ fondo interaccion con hover grilla con outline tiles que se van activando
 ☐ revisar seccion contacto linkedin y github
 ☐ dropdown para diferentes idiomas
 ✔ Ambos styles del dropdown @done (10/11/2022 23:24:40)
@@ -11,5 +11,13 @@
 ☐ cursor custom
 ☐ Canva background para "dibujar" o descubrir con el mov del mouse
 ✔ Trabajar en MODULOS @done (10/11/2022 23:24:07)
-☐ revisar dashboard tooltips(aparece en 2 lineas en vez de una)
-☐ Banner Frontend Developer* en movimiento
+✔ revisar dashboard tooltips(aparece en 2 lineas en vez de una) @done (26/1/2023 22:05:07)
+✔ Banner Frontend Developer* en movimiento @done (26/1/2023 22:04:30)
+☐ filter imagenes 3d(no se ve bien si el dropdown esta desplegado)
+☐ revisar tamaño carteles de las paginas 
+☐ 
+☐ https://www.youtube.com/watch?v=W5oawMJaXbU en el nombre con los h1
+☐ revisar si hacer todo en una sola pagina y como optimizarlo o si usar modelo de plantillas con node y express
+☐ mirar el script de scroll para mover el baner L/R 
+
+

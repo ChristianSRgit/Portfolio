@@ -39,7 +39,7 @@ function bannerMove(){
 }
 
 
-
+/* crear grid con js
 const createTile = index => {
     const tile = document.createElement('div');
 
@@ -65,3 +65,5 @@ const createGrid = () => {
 
 createGrid();
 window.onresize = () => createGrid();
+
+*/

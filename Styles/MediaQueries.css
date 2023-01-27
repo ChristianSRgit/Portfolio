@@ -1,1 +1,5 @@
-
+@media (max-width: 1600px) {
+    .dropdown{
+        font-size: 2rem;
+    }
+}

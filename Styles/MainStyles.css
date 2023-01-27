@@ -59,10 +59,11 @@ h2 {
 }
 
 h3 {
-    font-family: 'Darker Grotesque';
+    font-family: 'Bebas Neue';
+
     font-style: normal;
-    font-weight: 500;
-    font-size: 2rem;
+    font-weight: 400;
+    font-size: 3rem;
     line-height: 80%;
     text-align: left;
     color: var(--themeColorBlack);
@@ -157,7 +158,7 @@ li>img{
     font-size: 3rem;
     position: fixed;
     top: 1rem;
-    right: 10rem;
+    right: 6rem;
     width: 15rem;
     height: auto;
     margin: 0px;
@@ -317,8 +318,6 @@ a:visited {
 .projects div{
     text-align: center;
     padding-top: 2rem;
-    padding-bottom: 4rem;
-    padding-left: 2rem;
 }
 .projects ul{
     height: 100%;
@@ -327,24 +326,24 @@ a:visited {
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    padding-top: 4rem;
+   
 }
 
 .projects span{
     color: #1f1f1f;
     background-color: #4f26e9;
     border-radius: 10%;
-    padding-right: 2em;
-    padding-left: 2em;
     padding-top: 2em;
     padding-bottom: 2em;
+    padding-right: 1rem;
+    padding-left: 1rem;
     
 
 }
 
 .blender3D>li>span{
-    height: 10em;
-    background-color: red;
+    height: 8em;
+    width: 4em;
     border-radius: 0%;
    
 }
@@ -488,6 +487,7 @@ footer {
     text-align: center;
     margin-top: auto;
     padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 footer p {
@@ -516,6 +516,18 @@ footer p {
     display: grid;
     
 }
+
+
+::-webkit-scrollbar{
+    background-color: #f2e8de;
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #1f1f1f;
+}
+
+
 
 
 /*ANIMATIONS*/
