@@ -4,7 +4,7 @@ let bannerDashboard = document.getElementById('bannerDashboard');
 let navDir = document.getElementById('navDir');
 let DLMode = document.getElementById('DLMode')
 let body = document.getElementById('body')
-const wrapper = document.getElementById('tiles')
+let skillsBanner = document.getElementById('skillsBanner')
 
 
 
@@ -20,22 +20,24 @@ bannerDashboard.addEventListener('click',() => {
 document.addEventListener('scroll',bannerMove);
 
 
-
+let scrollBefore = window.scrollY;
 function bannerMove(){
-    let scrollBefore = 0;
-    let lastScrollPos = 0;
-
-    lastScrollPos = Math.round(window.scrollY)
-    console.log(lastScrollPos)
     
-    if(lastScrollPos > scrollBefore){
-        console.log('down')
-        scrollBefore = lastScrollPos;
-    }else{
-        console.log('up')
-        scrollBefore = lastScrollPos;
 
+    window.onscroll = function(e){
+        if(scrollBefore < window.scrollY){
+            console.log("down");
+            skillsBanner.classList.remove('movingLeft');
+            skillsBanner.classList.add('movingRight');
+
+        }else{
+            console.log("up")
+            skillsBanner.classList.remove('movingRight');
+            skillsBanner.classList.add('movingLeft');
+        }
+        scrollBefore = window.scrollY;
     }
+    
 }
 
 

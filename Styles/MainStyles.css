@@ -350,6 +350,9 @@ a:visited {
     height: 30rem;
     width: 15rem;
     border-radius: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
 .blender3D>li>span:nth-child(3){
@@ -358,6 +361,11 @@ a:visited {
     background-position: 10em;
 }
 
+/*link text*/
+.blender3D>li>span>a{
+    color: #f2e8de;
+    font-size: 2rem;
+}
 
 .blend1{
     background-image: url(/Media/blender/factory-min.png);
