@@ -21,6 +21,7 @@ document.addEventListener('scroll',bannerMove);
 
 
 let scrollBefore = window.scrollY;
+
 function bannerMove(){
     
 
@@ -41,31 +42,111 @@ function bannerMove(){
 }
 
 
-/* crear grid con js
-const createTile = index => {
-    const tile = document.createElement('div');
 
-    tile.classList.add('tile');
 
-    return tile;
+//random letters h1
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+document.getElementById("cs").onmouseover = event => {
+
+    let interval = null;
+    let iteration = 0;
+    clearInterval(interval);
+
+    interval = setInterval(() => {
+    event.target.innerText = event.target.innerText.split("")
+    .map((letter, index) => {
+        if(index < iteration){
+            return event.target.dataset.value[index]
+        }
+        return letters[Math.floor(Math.random() * 26)]
+    })
+        .join("");
+
+        if(iteration >= event.target.dataset.value.lenght){
+
+        clearInterval(interval);
+
+        }
+        iteration += 1 / 3;
+
+        },30);
 }
 
-const createTiles = quantity => {
-     Array.from(Array(quantity)).map((tile, index) => {
-        wrapper.appendChild(createTile(index));
-     })
+document.getElementById("front").onmouseover = event => {
+
+    let interval = null;
+    let iteration = 0;
+    clearInterval(interval);
+
+    interval = setInterval(() => {
+    event.target.innerText = event.target.innerText.split("")
+    .map((letter, index) => {
+        if(index < iteration){
+            return event.target.dataset.value[index]
+        }
+        return letters[Math.floor(Math.random() * 26)]
+    })
+        .join("");
+
+        if(iteration >= event.target.dataset.value.lenght){
+
+        clearInterval(interval);
+
+        }
+        iteration += 1 / 3;
+
+        },30);
 }
 
+document.getElementById("ramundo").onmouseover = event => {
 
-const createGrid = () => {
-    wrapper.innerHTML = '';
-    let columns = Math.floor(document.body.clientWidth / 50);
-    let rows = Math.floor(document.body.clientHeight / 50);
+    let interval = null;
+    let iteration = 0;
+    clearInterval(interval);
 
-    createTiles(columns * rows);
+    interval = setInterval(() => {
+    event.target.innerText = event.target.innerText.split("")
+    .map((letter, index) => {
+        if(index < iteration){
+            return event.target.dataset.value[index]
+        }
+        return letters[Math.floor(Math.random() * 26)]
+    })
+        .join("");
+
+        if(iteration >= event.target.dataset.value.lenght){
+
+        clearInterval(interval);
+
+        }
+        iteration += 1 / 3;
+
+        },30);
 }
 
-createGrid();
-window.onresize = () => createGrid();
+document.getElementById("developer").onmouseover = event => {
 
-*/
+    let interval = null;
+    let iteration = 0;
+    clearInterval(interval);
+
+    interval = setInterval(() => {
+    event.target.innerText = event.target.innerText.split("")
+    .map((letter, index) => {
+        if(index < iteration){
+            return event.target.dataset.value[index]
+        }
+        return letters[Math.floor(Math.random() * 26)]
+    })
+        .join("");
+
+        if(iteration >= event.target.dataset.value.lenght){
+
+        clearInterval(interval);
+
+        }
+        iteration += 1 / 3;
+
+        },30);
+}
