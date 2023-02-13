@@ -338,12 +338,14 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--detailColorVi);
     height: 25rem;
     width: 15rem;
 
 }
 
+.web1{
+    background-color: #4f26e9;
+}
 
 .blender3D>li>span{
     height: 30rem;
