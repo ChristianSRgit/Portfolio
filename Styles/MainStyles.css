@@ -338,14 +338,40 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25rem;
+    min-height: 25rem;
     width: 15rem;
 
 }
 
 .web1{
-    background-color: #4f26e9;
+    background-image: url('/Media/TimbtowerMini.png');
+    background-size: 15rem 25rem ;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.web2{
+    background-image: url('/Media/IGpostMini.png');
+    background-size: 15rem 25rem ;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.web3{
+    background-image: url('/Media/hokuMini.png');
+    background-size: 15rem 25rem ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.web4{
+    background-image: url('/Media/slprodMini.png');
+    background-size: 15rem 25rem ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .blender3D>li>span{
     height: 30rem;
