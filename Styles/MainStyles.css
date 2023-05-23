@@ -105,6 +105,9 @@ h3 {
 
 li>img{
     max-height: 3rem; /* 4 rem 1920 x 1080 y 2.5 rem notebook*/
+    min-height: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
 
     
 }
@@ -117,7 +120,7 @@ li>img{
 }
 
 .frontendDeveloper { /*containter*/
-    min-height: 10vh;
+    min-height: 14vh;
     width: 100%;
     background-color: var(--detailColorVi);
     overflow: hidden;
@@ -128,7 +131,7 @@ li>img{
 .frontendDeveloper li{
     display: flex;
     width: 25vh;
-    height: 100%;
+    min-height: 100%;
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
@@ -146,7 +149,7 @@ li>img{
 
 .frontDevLightThemeMoving{ /*content*/
     color: var(--themeColorBlack);
-    height: 100%;
+    min-height: 100%;
     list-style: none;
     display: flex;
 }
@@ -346,8 +349,7 @@ a:visited {
 
 .webProjects a{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
     min-height: 25rem;
     width: 15rem;
 }
