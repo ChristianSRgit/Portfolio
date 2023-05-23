@@ -530,6 +530,20 @@ label {
 }
 /*aca termina el dropdown*/
 
+.about{
+    padding-top: 4rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
+    
+}
+.about>span{
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 700;
+    border-radius: ;
+    background-color: rgb(83, 81, 81);
+}
+
 footer {
     color: gray;
     width: 100%;
