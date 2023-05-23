@@ -6,6 +6,9 @@
 ✔ Banner Frontend Developer* en movimiento @done (26/1/2023 22:04:30)
 ✔ revisar tamaño carteles de las paginas @done (2/7/2023, 2:55:48 PM)
 ✔ mirar el script de scroll para mover el baner L/R @done (2/7/2023, 2:55:59 PM)
+✔ revisar si hacer todo en una sola pagina y como optimizarlo o si usar modelo de plantillas con node y express @done (5/15/2023, 11:07:47 PM)
+
+
 ☐ animaciones carteles trabajos
 ☐ fondo interaccion con hover grilla con outline tiles que se van activando
 ☐ revisar seccion contacto linkedin y github
@@ -18,6 +21,8 @@
 ☐ filter imagenes 3d(no se ve bien si el dropdown esta desplegado)
 ☐  agregar efecto al fondo con hover
 ☐ https://www.youtube.com/watch?v=W5oawMJaXbU en el nombre con los h1 (revisar funcionalidad)
-☐ revisar si hacer todo en una sola pagina y como optimizarlo o si usar modelo de plantillas con node y express
+
+☐ hacer todo en una misma pagina, que el dashboard lleve a cada seccion usando los href :D
 
 
+☐ MEDIA QUERIES!!!
