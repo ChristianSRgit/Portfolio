@@ -47,106 +47,44 @@ function bannerMove(){
 //random letters h1
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-document.getElementById("cs").onmouseover = event => {
+function generateRandomLetters(target, value) {
+  let iteration = 0;
+  const interval = setInterval(() => {
+    target.innerText = target.innerText.split("").map((letter, index) => {
+      if (index < iteration) {
+        return value[index];
+      }
+      return letters[Math.floor(Math.random() * 26)];
+    }).join("");
 
-    let interval = null;
-    let iteration = 0;
-    clearInterval(interval);
+    if (iteration >= value.length) {
+      clearInterval(interval);
+    }
 
-    interval = setInterval(() => {
-    event.target.innerText = event.target.innerText.split("")
-    .map((letter, index) => {
-        if(index < iteration){
-            return event.target.dataset.value[index]
-        }
-        return letters[Math.floor(Math.random() * 26)]
-    })
-        .join("");
-
-        if(iteration >= event.target.dataset.value.lenght){
-
-        clearInterval(interval);
-
-        }
-        iteration += 1 / 3;
-
-        },60);
+    iteration += 1 / 3;
+  }, 30);
 }
 
-document.getElementById("front").onmouseover = event => {
+setTimeout(() => {
+  const csElement = document.getElementById("cs");
+  const frontElement = document.getElementById("front");
+  const ramundoElement = document.getElementById("ramundo");
+  const developerElement = document.getElementById("developer");
 
-    let interval = null;
-    let iteration = 0;
-    clearInterval(interval);
+  generateRandomLetters(csElement, csElement.dataset.value);
 
-    interval = setInterval(() => {
-    event.target.innerText = event.target.innerText.split("")
-    .map((letter, index) => {
-        if(index < iteration){
-            return event.target.dataset.value[index]
-        }
-        return letters[Math.floor(Math.random() * 26)]
-    })
-        .join("");
+  setTimeout(() => {
+    generateRandomLetters(ramundoElement, ramundoElement.dataset.value);
 
-        if(iteration >= event.target.dataset.value.lenght){
+    setTimeout(() => {
+      generateRandomLetters(frontElement, frontElement.dataset.value);
 
-        clearInterval(interval);
+      setTimeout(() => {
+        generateRandomLetters(developerElement, developerElement.dataset.value);
+      }, 700);
 
-        }
-        iteration += 1 / 3;
+    }, 700);
 
-        },30);
-}
+  }, 700); 
 
-document.getElementById("ramundo").onmouseover = event => {
-
-    let interval = null;
-    let iteration = 0;
-    clearInterval(interval);
-
-    interval = setInterval(() => {
-    event.target.innerText = event.target.innerText.split("")
-    .map((letter, index) => {
-        if(index < iteration){
-            return event.target.dataset.value[index]
-        }
-        return letters[Math.floor(Math.random() * 26)]
-    })
-        .join("");
-
-        if(iteration >= event.target.dataset.value.lenght){
-
-        clearInterval(interval);
-
-        }
-        iteration += 1 / 3;
-
-        },30);
-}
-
-document.getElementById("developer").onmouseover = event => {
-
-    let interval = null;
-    let iteration = 0;
-    clearInterval(interval);
-
-    interval = setInterval(() => {
-    event.target.innerText = event.target.innerText.split("")
-    .map((letter, index) => {
-        if(index < iteration){
-            return event.target.dataset.value[index]
-        }
-        return letters[Math.floor(Math.random() * 26)]
-    })
-        .join("");
-
-        if(iteration >= event.target.dataset.value.lenght){
-
-        clearInterval(interval);
-
-        }
-        iteration += 1 / 3;
-
-        },30);
-}
+}, 600); // initial timeout
