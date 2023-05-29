@@ -88,3 +88,6 @@ setTimeout(() => {
   }, 700); 
 
 }, 600); // initial timeout
+
+console.log("Hey, you made it all the way here! Something caught your attention, right? Well, guess what? We're still working on some amazing things behind the scenes. Stay tuned for up updates!");
+
