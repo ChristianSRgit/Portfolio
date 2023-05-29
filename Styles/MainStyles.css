@@ -93,7 +93,7 @@ h3 {
     grid-column: 1/1;
     grid-row: 1/1;
     padding-top: 2rem;
-    width: ;
+    
 }
 
 .frontendH1{
@@ -225,11 +225,11 @@ li>img{
 
 }
 
-.bannerDashboard>span{
+/* .bannerDashboard>span{
 }
 
 .fixBorder{
-}
+} */
 .darkThemeBanner {
     color: var(--themeColorBlack);
     background-color: var(--themeColorWhite);
@@ -251,8 +251,8 @@ li>img{
 }
 
 /*Dashboard -- elements*/
-span:nth-child(1) {
-}
+/* span:nth-child(1) {
+} */
 span:nth-child(2) {
     /*btn dropdown*/
     margin-left: 5rem;
@@ -566,7 +566,7 @@ label {
     width: 8rem;
     padding-bottom: 1rem;
 }
-.wip{}
+/* .wip{} */
 footer {
     color: rgb(0, 0, 0);
     width: 100%;
