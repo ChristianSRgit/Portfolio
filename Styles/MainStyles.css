@@ -362,7 +362,7 @@ a:visited {
 }
 
 .web2{
-    background-image: url('./Media/IGpostMini.png');
+    background-image: url("/Media/IGpostMini.png");
     background-size: 15rem 25rem ;
     background-repeat: no-repeat;
     background-position: center;
@@ -370,14 +370,14 @@ a:visited {
 }
 
 .web3{
-    background-image: url('./Media/hokuMini.png');
+    background-image: url("./Media/hokuMini.png");
     background-size: 15rem 25rem ;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .web4{
-    background-image: url('./Media/slprodMini.png');
+    background-image: url(./Media/slprodMini.png);
     background-size: 15rem 25rem ;
     background-repeat: no-repeat;
     background-position: center;
