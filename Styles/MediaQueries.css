@@ -7,4 +7,32 @@
     
         
     }
+    .wip{
+        display: none;
+    }
+}
+@media (max-width: 820px) { /*Media queries WIP*/
+    header,
+    .frontendDeveloper,
+    .lightThemeMoving,
+    .projects,
+    .contact,
+    .about,
+    footer{
+        display: none;
+    }
+    
+    li>img{
+        max-height: 2.5rem; 
+    
+        
+    }
+    .wip{
+        display: flex;
+        flex-direction: column;
+        flex-grow: inherit;
+        align-items: center;    
+        background-color: red;
+        height: 100%;
+    }
 }
