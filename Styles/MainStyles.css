@@ -406,24 +406,24 @@ a:visited {
 }
 
 .blend1{
-    background-image: url(./Media/blender/factory-min.png);
+    background-image: url(/Media/blender/factory-min.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
 }
 .blend2{
-    background-image: url(./Media/blender/glowhouse-min.png);
+    background-image: url(/Media/blender/glowhouse-min.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
 }
 .blend3{
-    background-image: url(./Media/blender/icecreamsadwich-min.png);
+    background-image: url(/Media/blender/icecreamsadwich-min.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
 }
-.blend4{background-image: url(./Media/blender/copCar.png);
+.blend4{background-image: url(/Media/blender/copCar.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;}
