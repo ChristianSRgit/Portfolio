@@ -566,9 +566,7 @@ label {
     width: 8rem;
     padding-bottom: 1rem;
 }
-.wip{
-    display: none;
-}
+.wip{}
 footer {
     color: rgb(0, 0, 0);
     width: 100%;
