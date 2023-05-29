@@ -355,14 +355,14 @@ a:visited {
 }
 
 .web1{
-    background-image: url('/Media/TimbtowerMini.png');
+    background-image: url('./Media/TimbtowerMini.png');
     background-size: 15rem 25rem ;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .web2{
-    background-image: url('/Media/IGpostMini.png');
+    background-image: url('./Media/IGpostMini.png');
     background-size: 15rem 25rem ;
     background-repeat: no-repeat;
     background-position: center;
@@ -370,14 +370,14 @@ a:visited {
 }
 
 .web3{
-    background-image: url('/Media/hokuMini.png');
+    background-image: url('./Media/hokuMini.png');
     background-size: 15rem 25rem ;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .web4{
-    background-image: url('/Media/slprodMini.png');
+    background-image: url('./Media/slprodMini.png');
     background-size: 15rem 25rem ;
     background-repeat: no-repeat;
     background-position: center;
@@ -406,24 +406,24 @@ a:visited {
 }
 
 .blend1{
-    background-image: url(/Media/blender/factory-min.png);
+    background-image: url(./Media/blender/factory-min.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
 }
 .blend2{
-    background-image: url(/Media/blender/glowhouse-min.png);
+    background-image: url(./Media/blender/glowhouse-min.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
 }
 .blend3{
-    background-image: url(/Media/blender/icecreamsadwich-min.png);
+    background-image: url(./Media/blender/icecreamsadwich-min.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
 }
-.blend4{background-image: url(/Media/blender/copCar.png);
+.blend4{background-image: url(./Media/blender/copCar.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;}
