@@ -42,6 +42,9 @@ function bannerMove(){
 }
 
 
+//Change about leng
+
+
 
 
 //random letters h1
