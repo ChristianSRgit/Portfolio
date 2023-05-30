@@ -9,13 +9,13 @@
 ✔ revisar si hacer todo en una sola pagina y como optimizarlo o si usar modelo de plantillas con node y express @done (5/15/2023, 11:07:47 PM)
 
 
-☐ Cambiar los h1 con la animacion hover por una unica animacion cuando carga la pag
+✔ Cambiar los h1 con la animacion hover por una unica animacion cuando carga la pag @done (5/29/2023, 9:32:29 PM)
 
 ☐ agregar boton para descargar cv en pdf
 ☐ animaciones carteles trabajos
 ☐ fondo interaccion con hover grilla con outline tiles que se van activando || Ojo de pez con hover
 ☐  agregar efecto al fondo con hover
-☐ revisar seccion contacto linkedin y github
+✔ revisar seccion contacto linkedin y github @done (5/29/2023, 9:32:17 PM)
 ☐ dropdown para diferentes idiomas
 ☐ comprarle dominio
 ☐ Agregarlo a destacado de linkedin
@@ -23,10 +23,9 @@
 ☐ cursor custom
 ✘ Canva background para "dibujar" o descubrir con el mov del mouse @cancelled (5/23/2023, 12:02:54 PM)
 ☐ filter imagenes 3d(no se ve bien si el dropdown esta desplegado)
-☐ https://www.youtube.com/watch?v=W5oawMJaXbU en el nombre con los h1 (revisar funcionalidad)
 
-☐ hacer todo en una misma pagina, que el dashboard lleve a cada seccion usando los href :D
+✔ hacer todo en una misma pagina, que el dashboard lleve a cada seccion usando los href :D @done (5/29/2023, 9:32:00 PM)
 
-banner en movimiento(revisar el tamaño, que deberia estar fijo y no lo está)
+✔ banner en movimiento(revisar el tamaño, que deberia estar fijo y no lo está) @done (5/29/2023, 9:31:56 PM)
 
-☐ MEDIA QUERIES!!!
+✔ MEDIA QUERIES!!! @done (5/29/2023, 9:31:35 PM)

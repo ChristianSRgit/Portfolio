@@ -30,6 +30,7 @@ body{
     font-weight: 500;
     font-size: 1.5rem;
 }
+  
 
 header {
     display: flex;
@@ -174,6 +175,7 @@ li>img{
     height: auto;
     margin: 0px;
     z-index: 1;
+      
 }
 
 .dropdownDark{
@@ -183,6 +185,8 @@ li>img{
 .dropdownLight{
     color: var(--themeColorBlack);
     border: 2px solid var(--themeColorBlack);
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo transparente */
+    backdrop-filter: blur(0.1px); /* Aplicar desenfoque */
 
 
 }
@@ -559,7 +563,6 @@ label {
     background-color: #6d6d6d;
     padding-right: 0.8rem;
     padding-left: 0.8rem;
-    padding-top: 0.5rem;
     padding-bottom: 0.8rem;
 }
 
@@ -602,6 +605,29 @@ footer p {
     border-top: solid 1px var(--themeColorBlack);
 
 }
+
+/*Dark and light mode*/
+.light-mode{
+    background-color: white;
+
+    background-image:
+    linear-gradient(black 1px, transparent 1px),
+    linear-gradient(90deg, black 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  }
+  
+  .dark-mode{
+    background-color: black;
+
+    background-image:
+    linear-gradient(white 1px, transparent 1px),
+    linear-gradient(90deg, white 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  }
+  
+
 
 
 

@@ -66,12 +66,16 @@
     }
     .about,.about span{
         font-size: 1.4rem;
-        line-height: 1.8rem;
         text-align: justify;
         width: 100%;
         padding-right: 0.0rem;
         padding-left: 0.0rem;
         margin-left: 0px;
+    }
+    .spanContainer{
+        background-color: #6d6d6d;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .projects div{
         padding-left: 0px;
